@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Links and forms</title>
+	<style type="text/css">
+		.form{}
+			.form-field{
+				padding-bottom: 1em;
+			}
+				.form-field > label, 
+				.form-field > input{
+					display: block;
+				}
+		.inline > label,
+		.inline > input{
+			display: inline!important;
+		}
+		.block{
+			display: block;
+			padding-bottom: 1em;
+		}
+		.reference{
+			border-collapse: collapse;
+		}
+		.reference, th, td{
+			border: 1px solid black;
+		}
+		.reference td{
+			width: 50%;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Forms y links</h1>
+	</header>
+	<main>
+		<section>
+			<article>
+				<header><h2>Links</h2></header>
+				<section>
+					<a href="index_html5.html" class="block">Index Html5</a>
+					<a href="http://www.w3schools.com/" class="block">w3schools</a>
+					<a href="#new-elements-html5" class="block">New forms elements</a>
+					<a href="#new-inputs-html5" class="block">New inputs type</a>
+					<a href="http://www.w3schools.com/tags/default.asp">HTML Element Reference</a>
+				</section>
+			</article>
+		</section>
+		<section>
+			<article>
+				<header><h2>Forms</h2></header>
+				<section>
+					<form id="form1" class="form" action="#" method="post">
+						<p class="form-field">
+							<label for="first-name">First name *</label>
+							<input type="text" id="first-name" name="first-name" required autofocus>
+						</p>
+						<p class="form-field">
+							<label for="last-name">Last name</label>
+							<input type="text" id="last-name" name="last-name">
+						</p>
+						<p class="form-field">
+							<label for="email">Email *</label>
+							<input type="email" required id="email" name="email">
+						</p>
+						<p class="form-field">
+							<label for="password">Password *</label>
+							<input type="password" name="password" required id="password">
+						</p>
+						<p class="form-field">
+							<label for="birthday">Birthday</label>
+							<input type="date" id="birthday" name="birthday">
+						</p>
+						<p class="form-field inline">
+							<input required type="radio" name="gender" value="male" id="male">
+							<label for="male" class="inline">Male</label>
+							<input required type="radio" name="gender" value="female" id="female">
+							<label for="female" class="inline">Female</label>
+						</p>
+						<p class="form-field">
+							<label for="location">Location</label>
+							<select name="location" id="location">
+								<option value="1">Location 1</option>
+								<option value="2">Location 2</option>
+								<option value="3">Location 3</option>
+								<option value="4">Location 4</option>
+								<option value="5">Location 5</option>
+							</select>
+						</p>
+						<p class="form-field">
+							<input list="browsers">
+							<datalist id="browsers">
+							  <OPTION VALUE="AL" LABEL="ALABAMA">
+							  <OPTION VALUE="AK" LABEL="ALASKA">
+							  <OPTION VALUE="AS" LABEL="AMERICAN SAMOA">
+							  <OPTION VALUE="AZ" LABEL="ARIZONA">
+							  <OPTION VALUE="AR" LABEL="ARKANSAS">
+							  <OPTION VALUE="CA" LABEL="CALIFORNIA">
+							  <OPTION VALUE="CO" LABEL="COLORADO">
+							  <OPTION VALUE="CT" LABEL="CONNECTICUT">
+							</datalist>
+						</p>
+						<p class="form-field inline">
+							<input required type="checkbox" name="terms" id="terms">
+							<label for="terms">I agree to terms of service. *</label>
+						</p>
+						<p class="form-buttons">
+							<button type="submit">Enviar</button>
+						</p>
+					</form>
+				</section>
+			</article>
+		</section>
+		<section id="new-elements-html5">
+			<article>
+				<header>
+					<h2>New Form Elements <a href="http://www.w3schools.com/html/html5_new_elements.asp">Reference</a></h2>
+				</header>
+				<section>
+					<table class="reference">
+						<tbody><tr>
+						<th style="width:15%">Tag</th>
+						<th>Description</th>
+						</tr>
+						<tr>
+						<td>&lt;datalist&gt;</td>
+						<td>Defines pre-defined options for input controls</td>
+						</tr>
+						<tr>
+						<td>&lt;keygen&gt;</td>
+						<td>Defines a key-pair generator field (for forms)</td>
+						</tr>
+						<tr>
+						<td>&lt;output&gt;</td>
+						<td>Defines the result of a calculation</td>
+						</tr>
+						</tbody>
+					</table>
+				</section>
+			</article>
+		</section>
+		<section id="new-inputs-html5">
+			<article>
+				<header>
+					<h2>New Input Types <a href="http://www.w3schools.com/html/html5_new_elements.asp">Reference</a></h2>
+				</header>
+				<section>
+					<table class="reference">
+						<tbody><tr>
+						<th>New Input Types</th>
+						<th>New Input Attributes</th>
+						</tr>
+						<tr>
+						<td valign="top">
+						<ul>
+							<li>color</li>
+							<li>date</li>
+							<li>datetime</li>
+							<li>datetime-local</li>
+							<li>email</li>
+							<li>month</li>
+							<li>number</li>
+							<li>range</li>
+							<li>search</li>
+							<li>tel</li>
+							<li>time</li>
+							<li>url</li>
+							<li>week</li>
+						</ul>
+						</td>
+						<td>
+						<ul>
+							<li>autocomplete</li>
+							<li>autofocus</li>
+							<li>form</li>
+							<li>formaction</li>
+							<li>formenctype</li>
+							<li>formmethod</li>
+							<li>formnovalidate</li>
+							<li>formtarget</li>
+							<li>height and width</li>
+							<li>list</li>
+							<li>min and max</li>
+							<li>multiple</li>
+							<li>pattern (regexp)</li>
+							<li>placeholder</li>
+							<li>required</li>
+							<li>step</li>
+						</ul>
+						</td></tr>
+						</tbody>
+					</table>
+				</section>
+			</article>
+		</section>
+	</main>
+</body>
+</html>
