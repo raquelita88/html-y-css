@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+	<form action="#" method="post">
+		<p>
+			<label for="firs-name">Nombre</label>
+			<input type="text" id="first-name" autocomplete="on" autofocus required placeholder="Nombres(s)">
+		</p>
+		<p>
+			<label for="last-name">Apellidos</label>
+			<input type="text" autocomplete="on" id="last-name" placeholder="Apellido(s)">
+		</p>
+		<p>
+			<label for="email">Email</label>
+			<input type="email" id="email" autocomplete="off" required novalidate>
+		</p>
+		<p>
+			<input type="image" src="http://placehold.it/350x150" alt="Submit" width="100" height="100">
+		</p>
+		<p>
+			<label for="bday">Fecha de Nacimiento</label>
+			<input type="date" name="bday" min="1945-01-01" max="2014-12-31">
+		</p>
+		<p>
+			<label for="quantity">Cantidad de Mascotas</label>
+			<input type="number" name="quantity" min="1" max="5">
+		</p>
+		<p>
+			<input type="radio" name="gender" id="hombre">
+			<label for="hombre"> Hombre</label>
+			<input type="radio" name="gender" id="mujer">
+			<label for="mujer"> Mujer</label>
+		</p>
+		<p>
+			<label for="img">Imagenes</label>
+			<input type="file" name="img" multiple>
+		</p>
+		<p>
+			Codigo de pais:
+			<input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Tres letras del pais">
+		</p>
+		<p>
+			<label>Multiplos de 3</label>
+			<input type="number" name="points" step="3">
+		</p>
+		<p>
+			<label for="list">Navegadores</label>
+			<input id="list" list="browsers">
+
+			<datalist id="browsers">
+			  <option value="Internet Explorer">
+			  <option value="Firefox">
+			  <option value="Chrome">
+			  <option value="Opera">
+			  <option value="Safari *">
+			</datalist>
+		</p>
+	</form>
+</body>
+</html>
